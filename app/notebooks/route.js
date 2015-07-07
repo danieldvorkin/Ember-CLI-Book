@@ -20,6 +20,11 @@ export default Ember.Route.extend({
 				self.controller.set('message', 'New Notebook was NOT added successfully :(');
 				console.log('Save Failed');
 			});
+		},
+		deleteNotebook: function(notebook){
+			console.log("Deleting the entire notebook");
+			notebook.deleteRecord();
+			notebook.save;
 		}
 	}
 });

@@ -11,6 +11,7 @@
 						{{#link-to 'notebooks.notes' notebook.id}}
               {{notebook.title}}
             {{/link-to}}
+            <button {{action 'deleteNotebook' notebook}}>Delete</button>
 					</li>
 				{{else}}
 					<div>No Notebooks found</div>
