@@ -27,7 +27,7 @@ export default Ember.Route.extend({
 					});
 				});
 		},
-		deleteNote: function(){
+		deleteNote: function(note){
 			console.log('deleting note with title' + note.get('title'));
 			note.deleteRecord();
 			note.save();

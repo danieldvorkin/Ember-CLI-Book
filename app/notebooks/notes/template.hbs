@@ -13,7 +13,7 @@
 						{{#link-to 'notebooks.notes.index' note.id}}
 							{{note.title}}
 						{{/link-to}}
-						<button {{action 'deleteNote'}}>Delete</button>
+						<button {{action 'deleteNote' note}}>Delete</button>
 					</li>
 				{{/each}}
 			</ul>
