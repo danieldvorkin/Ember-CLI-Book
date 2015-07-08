@@ -15,7 +15,7 @@ export default Ember.Route.extend({
 				// Checks for the length of users in the system
 				if(users.get('length') === 1){
 					var user = users.objectAt(0);
-					self.controllerFor('application').set('user', user);
+					self.session.set('user', user);
 					self.transitionTo('notebooks', user.get('id'));
 				}
 				else {
